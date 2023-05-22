@@ -1,4 +1,16 @@
 <h1>Stupid Coach Exercise</h1>
-<p>Student : <%= @questionasked %></p>
-<p>Coach : <%= @coachanswer %></p>
-<a href="http://localhost:3000/ask">Ask another question</a>
+
+<div id="question">
+  <p><%= @questionasked %></p>
+  <p> --You</p>
+</div>
+
+<div id="answer">
+  <p><%= @coachanswer %></p>
+  <p> --Coach</p>
+
+</div>
+
+<div id="link">
+  <%=link_to "Ask another question", "/ask"%>
+</div>
